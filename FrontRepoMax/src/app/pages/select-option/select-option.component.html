@@ -1,0 +1,57 @@
+<form [formGroup]="formGroup">
+  <div class="ml-5">
+    <h2>Escoga una de las monedas que desea buscar</h2>
+    <select name="select-currency"
+            (change)="changeValue()"
+            formControlName="selectCurrency">
+      <option [value]="currency.label"
+              *ngFor="let currency of currencyOptions">{{currency.label}}</option>
+  </select>
+  </div>
+</form>
+
+<div>
+  <button
+    id="search-element"
+    (click)="getValueCurreny()">
+    Filtrar
+</button>
+</div>
+
+<hr>
+
+
+<div class="container-title" *ngIf="showValues">
+  <div>
+    ELEMENTO SELECCIONADO: <span>{{ currencyElement?.key != null ? currencyElement?.key : null | uppercase }}</span>
+  </div>
+
+  <div>
+    NOMBRE : <span>{{ currencyElement?.name != null ? currencyElement?.name : null | uppercase }}</span>
+  </div>
+</div>
+
+<div class="container-table" *ngIf="showValues">
+  <table class="egt">
+
+    <tr class="element-selected">
+      <td colspan="2">VALORES :</td>
+    </tr>
+
+    <tr *ngFor="let currency of result">
+      <td>
+        {{ currency }}
+      </td>
+
+    </tr>
+
+  </table>
+</div>
+
+<div>
+  <button
+    id="search-element"
+    (click)="callToMenu()">
+    Volver
+</button>
+</div>

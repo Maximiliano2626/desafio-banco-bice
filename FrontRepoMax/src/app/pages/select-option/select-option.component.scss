@@ -1,0 +1,53 @@
+@import '../../shared/styles/colors.scss';
+
+button {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  background-color: $blue-bank-bice;
+  color: $white-bank-bice;
+  border-radius: 6px;
+}
+
+.container-button {
+  align-items: center;
+}
+
+select {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+}
+
+.container-table {
+  margin-top: 20px;
+}
+
+.container-title {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.element-selected {
+  font-size: 18px;
+}
+
+span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  border: black 2px solid;
+}
+
+hr {
+  margin-top: 20px;
+}

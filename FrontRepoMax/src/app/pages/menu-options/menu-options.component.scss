@@ -1,0 +1,30 @@
+@import '../../shared/styles/colors.scss';
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 60px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-bottom: 40px;
+  width: 50%;
+  background-color: $blue-bank-bice;
+  color: $white-bank-bice;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+section {
+  margin-left: 30px;
+  margin-right: 30px;
+}

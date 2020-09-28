@@ -1,0 +1,56 @@
+<form [formGroup]="formGroup">
+<div class="row">
+  <h1>Busqueda por una fecha determinada</h1>
+
+  <input name="search-date"
+         placeholder="02-01-2019"
+         formControlName="date">
+
+  <select name="select-for-date"
+          formControlName="selectElement">
+          <option [value]="currency.label"
+            *ngFor="let currency of currencyOptions">{{currency.label}}</option>
+  </select>
+  <div>
+    <button
+      id="call-to-menu"
+      (click)="callDataForDate()">
+      Filtrar
+  </button>
+  </div>
+</div>
+</form>
+
+<div class="container-table">
+  <table>
+
+    <tr>
+      <td colspan="5"><span>VALORES FILTRADOS POR FECHA</span></td>
+    </tr>
+
+    <tr>
+      <td class="title-table">Elemento</td>
+      <td class="title-table">Nombre</td>
+      <td class="title-table">Unidad</td>
+      <td class="title-table">Fecha</td>
+      <td class="title-table">Valor</td>
+    </tr>
+
+    <tr>
+      <td>{{ elementInformation.key }}</td>
+      <td>{{ elementInformation.name }}</td>
+      <td>{{ elementInformation.unit }}</td>
+      <td>{{ elementInformation.date }}</td>
+      <td>{{ elementInformation.value }}</td>
+    </tr>
+
+  </table>
+</div>
+
+<div>
+  <button
+    id="call-to-menu"
+    (click)="callToMenu()">
+    Volver
+</button>
+</div>

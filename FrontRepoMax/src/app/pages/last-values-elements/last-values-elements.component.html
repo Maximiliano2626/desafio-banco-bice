@@ -1,0 +1,110 @@
+<div class="row">
+  <h1>Últimos valores de los elementos</h1>
+</div>
+
+<div class="container-table" *ngIf="showValues">
+  <table>
+
+    <tr>
+      <td colspan="5"><span>ULTIMOS VALORES DE INDICADORES</span></td>
+    </tr>
+
+    <tr>
+      <td class="title-table">Elemento</td>
+      <td class="title-table">Nombre</td>
+      <td class="title-table">Unidad</td>
+      <td class="title-table">Fecha</td>
+      <td class="title-table">Valor</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.cobre.key}}</td>
+      <td>{{elements.cobre.name}}</td>
+      <td>{{elements.cobre.unit}}</td>
+      <td>{{elements.cobre.date}}</td>
+      <td>{{elements.cobre.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.dolar.key}}</td>
+      <td>{{elements.dolar.name}}</td>
+      <td>{{elements.dolar.unit}}</td>
+      <td>{{elements.dolar.date}}</td>
+      <td>{{elements.dolar.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.euro.key}}</td>
+      <td>{{elements.euro.name}}</td>
+      <td>{{elements.euro.unit}}</td>
+      <td>{{elements.euro.date}}</td>
+      <td>{{elements.euro.value}}</td>
+    </tr>
+
+
+    <tr>
+      <td>{{elements.ipc.key}}</td>
+      <td>{{elements.ipc.name}}</td>
+      <td>{{elements.ipc.unit}}</td>
+      <td>{{elements.ipc.date}}</td>
+      <td>{{elements.ipc.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.ivp.key}}</td>
+      <td>{{elements.ivp.name}}</td>
+      <td>{{elements.ivp.unit}}</td>
+      <td>{{elements.ivp.date}}</td>
+      <td>{{elements.ivp.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.oro.key}}</td>
+      <td>{{elements.oro.name}}</td>
+      <td>{{elements.oro.unit}}</td>
+      <td>{{elements.oro.date}}</td>
+      <td>{{elements.oro.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.plata.key}}</td>
+      <td>{{elements.plata.name}}</td>
+      <td>{{elements.plata.unit}}</td>
+      <td>{{elements.plata.date}}</td>
+      <td>{{elements.plata.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.uf.key}}</td>
+      <td>{{elements.uf.name}}</td>
+      <td>{{elements.uf.unit}}</td>
+      <td>{{elements.uf.date}}</td>
+      <td>{{elements.uf.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.utm.key}}</td>
+      <td>{{elements.utm.name}}</td>
+      <td>{{elements.utm.unit}}</td>
+      <td>{{elements.utm.date}}</td>
+      <td>{{elements.utm.value}}</td>
+    </tr>
+
+    <tr>
+      <td>{{elements.yen.key}}</td>
+      <td>{{elements.yen.name}}</td>
+      <td>{{elements.yen.unit}}</td>
+      <td>{{elements.yen.date}}</td>
+      <td>{{elements.yen.value}}</td>
+    </tr>
+
+  </table>
+</div>
+
+<div>
+  <button
+    id="call-menu"
+    (click)="callToMenu()">
+    Volver
+</button>
+</div>

@@ -1,0 +1,32 @@
+@import '../../shared/styles/colors.scss';
+
+table {
+  width: 100%;
+  font-size: 25px;
+}
+
+td {
+  text-align: center;
+  border: black 2px solid;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 30%;
+  margin-bottom: 40px;
+  width: 40%;
+  background-color: $blue-bank-bice;
+  color: $white-bank-bice;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.title-table {
+  font-weight: 700;
+}
